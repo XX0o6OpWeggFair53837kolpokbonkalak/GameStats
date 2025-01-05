@@ -37,7 +37,7 @@ local adminsLabel = createLabel("Admins: None", UDim2.new(0, 0, 0, 60))
 local function isHDAdmin(player)
     local adminLevel = player:FindFirstChild("AdminLevel")
     if adminLevel then
-        local allowedRoles = { "Owner", "Admin", "Moderator", "CustomRank" }
+        local allowedRoles = { "Owner", "Admin", "Moderator", "CustomRank", "HeadAdmin", "S.B.A", "SeniorAdmin" }
         for _, role in ipairs(allowedRoles) do
             if adminLevel.Value == role then
                 return true
